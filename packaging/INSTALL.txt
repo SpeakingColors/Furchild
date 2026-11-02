@@ -1,0 +1,41 @@
+Furchild install, remove and use (works fully offline)
+======================================================
+
+Furchild is a free, open source tube-style limiting compressor (VST3) by Studio 87.
+
+The installers are not signed (signing costs money and this project is free). Windows may show a blue
+"unknown publisher" screen: click "More info", then "Run anyway". macOS may block the package: open
+System Settings > Privacy & Security and choose "Open Anyway". The installers contain nothing but the plugin,
+the manual and an uninstaller; the SHA256SUMS file lets you check the download.
+
+Windows
+  Run windows\Furchild-Setup.exe. It installs the VST3 plugin (C:\Program Files\Common Files\VST3) and the
+  manual (C:\Program Files\Studio 87\Furchild). Close your DAW first. Installing a new version over an old one works.
+  Remove: Settings > Apps > Furchild > Uninstall. It asks if you also want your saved presets deleted
+  (default is No, so they stay).
+
+macOS
+  Open macos\Furchild-macOS.pkg. It installs the VST3 plugin, the manual and "Uninstall Furchild".
+  Remove: open "Uninstall Furchild" in the Applications folder. It asks if you also want your saved presets deleted
+  (default is Keep).
+
+Linux, DAW installed as a Flatpak (for example Bitwig, Reaper or Ardour from Flathub)
+  1. Your DAW should use the org.freedesktop.Platform 25.08 runtime (check with: flatpak info <DAW id>, Runtime line).
+  2. Install the file from the linux folder:
+       flatpak install --user linux/Furchild-flatpak-25.08.flatpak
+  3. Restart the DAW and rescan plugins.
+  Remove: flatpak uninstall --user org.freedesktop.LinuxAudio.Plugins.Furchild
+
+Linux, DAW installed natively
+  Extract linux/Furchild-linux-vst3.tar.gz into ~/.vst3  (create the folder if needed), then rescan plugins.
+  Remove: delete the Furchild.vst3 folder from ~/.vst3.
+
+Your saved presets (kept on remove unless you choose to delete them)
+  Windows : %APPDATA%\Studio 87\Furchild\presets
+  macOS   : ~/Library/Application Support/Studio 87/Furchild/presets
+  Linux   : ~/.local/share/Studio 87/Furchild/presets  (a Flatpak DAW keeps its own copy under ~/.var/app/<DAW id>/data/)
+
+Latency: the plugin reports 16 samples at 44.1 and 48 kHz (its 2x oversampled tube stage) and 0 at 88.2 kHz and above.
+This is a test build: it has not been checked on real Windows, macOS or Flatpak machines yet.
+
+Manual: Furchild-manual.pdf. Checksums: SHA256SUMS. Licence: AGPL-3.0-or-later (see LICENSE).

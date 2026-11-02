@@ -327,9 +327,9 @@ void Modal::openAbout()
                   { "\nmacOS  " }, { "~/Library/Application Support/Studio 87/Furchild/presets", false, true } });
     p->textRow ({ { "Install and uninstall:", true }, { " the installer puts the VST3 in the standard folder for your system. The uninstaller removes everything it installed and asks before touching your presets (it keeps them by default)." } });
     auto* gh = p->make<PButton> (c, "GitHub");
-    gh->onClick = [] (const ModifierKeys&) { URL ("https://github.com/SpeakingColors/furchild").launchInDefaultBrowser(); };
+    gh->onClick = [] (const ModifierKeys&) { URL ("https://github.com/SpeakingColors/Furchild").launchInDefaultBrowser(); };
     auto* rel = p->make<PButton> (c, "Releases");
-    rel->onClick = [] (const ModifierKeys&) { URL ("https://github.com/SpeakingColors/furchild/releases").launchInDefaultBrowser(); };
+    rel->onClick = [] (const ModifierKeys&) { URL ("https://github.com/SpeakingColors/Furchild/releases").launchInDefaultBrowser(); };
     auto* kofi = p->make<PButton> (c, "Ko-fi studio87");
     kofi->onClick = [] (const ModifierKeys&) { URL ("https://ko-fi.com/studio87").launchInDefaultBrowser(); };
     auto* note = p->make<TextBlock> (c, std::vector<Seg> { { "Support is entirely optional. Nothing is locked.", false, false, true } });
