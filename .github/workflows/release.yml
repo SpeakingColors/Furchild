@@ -36,10 +36,16 @@ jobs:
           python3 tools/gen_manual.py "$ver"
           google-chrome --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="$NAME-manual.pdf" "file://$PWD/docs/manual.html"
           test -s "$NAME-manual.pdf"
+          pip install cairosvg
+          python3 -c "import cairosvg; cairosvg.svg2png(url='assets/icon.svg', write_to='icon256.png', output_width=256, output_height=256)"
+          python3 -c "from PIL import Image; Image.open('icon256.png').save('furchild.ico', sizes=[(16,16),(32,32),(48,48),(64,64),(128,128),(256,256)])"
+          test -s furchild.ico
       - uses: actions/upload-artifact@v4
         with:
           name: manual
-          path: "*.pdf"
+          path: |
+            *.pdf
+            furchild.ico
 
   windows:
     needs: manual
@@ -64,9 +70,7 @@ jobs:
           find build -type d -name "*.vst3" -print0 | while IFS= read -r -d '' v; do echo "VST3: $v"; cp -r "$v" "stage/vst3/"; done
           [ -d "stage/vst3/Furchild.vst3" ] || { echo "missing the VST3 bundle"; ls stage/vst3; exit 1; }
           cp manual/*.pdf "stage/$NAME-manual.pdf"
-          pip install Pillow cairosvg
-          python3 -c "import cairosvg; cairosvg.svg2png(url='assets/icon.svg', write_to='icon256.png', output_width=256, output_height=256)"
-          python3 -c "from PIL import Image; Image.open('icon256.png').save('stage/furchild.ico', sizes=[(16,16),(32,32),(48,48),(64,64),(128,128),(256,256)])"
+          cp manual/furchild.ico stage/furchild.ico
           test -s stage/furchild.ico
       - name: Installer (Inno Setup)
         run: |
