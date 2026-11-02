@@ -6,6 +6,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 concurrency:
   group: furchild-${{ github.ref }}
   cancel-in-progress: true
@@ -55,7 +58,23 @@ jobs:
           cmake -S . -B build-snap -DCMAKE_BUILD_TYPE=Release -DFUR_BUILD_SNAPSHOT=ON
           cmake --build build-snap --target FurSnapshot -j4
       - name: Self tests (parameter mapping, state round trip, editor create and resize)
-        run: xvfb-run -a build-snap/FurSnapshot_artefacts/Release/FurSnapshot --selftest tests/fixtures/state-v1.xml
+        run: |
+          S=build-snap/FurSnapshot_artefacts/Release/FurSnapshot
+          mkdir -p shots
+          if [ ! -f tests/fixtures/state-v1.xml ]; then
+            echo "::notice::No committed fixture yet; writing one for the ci-out branch"
+            xvfb-run -a $S --write-fixture shots/state-v1.xml
+            F=shots/state-v1.xml
+          else
+            F=tests/fixtures/state-v1.xml
+          fi
+          set +e
+          xvfb-run -a $S --selftest $F > selftest.log 2>&1
+          rc=$?
+          set -e
+          cat selftest.log
+          grep -iE "fail|assert|error" selftest.log | while read -r l; do echo "::error::$l"; done
+          exit $rc
       - name: Render the real window
         run: |
           mkdir -p shots
@@ -70,6 +89,18 @@ jobs:
         with:
           name: Furchild-editor-snapshots
           path: shots
+      - name: Publish renders to the ci-out branch
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name SpeakingColors
+          git config user.email SpeakingColors@users.noreply.github.com
+          rm -rf /tmp/out && mkdir /tmp/out && cp -r shots/. /tmp/out/
+          git checkout --orphan ci-out
+          git rm -rf . -q
+          cp -r /tmp/out/. .
+          git add -A
+          git commit -q -m "CI renders of the real editor"
+          git push -f origin ci-out
 
   windows:
     runs-on: windows-latest
