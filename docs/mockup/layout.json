@@ -1,0 +1,2921 @@
+{
+ "sc": 1,
+ "cheekL": {
+  "t": "",
+  "r": [
+   0,
+   0,
+   52,
+   640
+  ],
+  "tip": "Double-click the wood to reset the window to 100%.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cheekR": {
+  "t": "",
+  "r": [
+   1148,
+   0,
+   52,
+   640
+  ],
+  "tip": "Double-click the wood to reset the window to 100%.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "main": {
+  "t": "\n        \n          \n            \n            FurchildStudio 87\n          \n          \n          \n            \u25c0\n            Start Here\n            \u25b6\n            Save\n          \n          \n          Bypass\n          Guide\n          Settings\n          About & Support\n        \n        \n          \n            \n              LeftTC 3GR 3.6 dB\n              RightTC 3GR 3.6 dB\n              Transfer curvedB indB out\n              Gain reduction, last 6 sA 3.6B 3.6\n            \n            \n              Channel one \u00b7 Left24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n              \n                \n                Left / RightLat / Vert\n                LinkLevel Match\n                Needle: GRNeedle: Level\n                Side-chain HPOff60 Hz120 Hz240 Hz\n                Output-120+12+2.0 dBMix050100100%\n              \n              Channel two \u00b7 Right24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n            \n            \n              \u25b6 Play preview\n              \n                Full mix loopDrum loopBassChord stabsYour file\n              \n              Load file\n              \n              Bypass (B) switches between processed and dry so you can compare.\n              Preview rig, not part of the plugin\n            \n          \n          \n            InOut\n            \n            -13.7-15.6\n          \n        \n        Studio 87 \u00b7 Furchild v0.1 design mockup1200 \u00d7 640 px\n      ",
+  "r": [
+   52,
+   0,
+   1096,
+   640
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "hdr": {
+  "t": "\n          \n            \n            FurchildStudio 87\n          \n          \n          \n            \u25c0\n            Start Here\n            \u25b6\n            Save\n          \n          \n          Bypass\n          Guide\n          Settings\n          About & Support\n        ",
+  "r": [
+   52,
+   0,
+   1096,
+   46
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "body": {
+  "t": "\n          \n            \n              LeftTC 3GR 3.6 dB\n              RightTC 3GR 3.6 dB\n              Transfer curvedB indB out\n              Gain reduction, last 6 sA 3.6B 3.6\n            \n            \n              Channel one \u00b7 Left24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n              \n                \n                Left / RightLat / Vert\n                LinkLevel Match\n                Needle: GRNeedle: Level\n                Side-chain HPOff60 Hz120 Hz240 Hz\n                Output-120+12+2.0 dBMix050100100%\n              \n              Channel two \u00b7 Right24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n            \n            \n              \u25b6 Play preview\n              \n                Full mix loopDrum loopBassChord stabsYour file\n              \n              Load file\n              \n              Bypass (B) switches between processed and dry so you can compare.\n              Preview rig, not part of the plugin\n            \n          \n          \n            InOut\n            \n            -13.7-15.6\n          \n        ",
+  "r": [
+   52,
+   46,
+   1096,
+   568
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "left": {
+  "t": "\n            \n              LeftTC 3GR 3.6 dB\n              RightTC 3GR 3.6 dB\n              Transfer curvedB indB out\n              Gain reduction, last 6 sA 3.6B 3.6\n            \n            \n              Channel one \u00b7 Left24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n              \n                \n                Left / RightLat / Vert\n                LinkLevel Match\n                Needle: GRNeedle: Level\n                Side-chain HPOff60 Hz120 Hz240 Hz\n                Output-120+12+2.0 dBMix050100100%\n              \n              Channel two \u00b7 Right24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n            \n            \n              \u25b6 Play preview\n              \n                Full mix loopDrum loopBassChord stabsYour file\n              \n              Load file\n              \n              Bypass (B) switches between processed and dry so you can compare.\n              Preview rig, not part of the plugin\n            \n          ",
+  "r": [
+   52,
+   46,
+   1004,
+   568
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "disp": {
+  "t": "\n              LeftTC 3GR 3.6 dB\n              RightTC 3GR 3.6 dB\n              Transfer curvedB indB out\n              Gain reduction, last 6 sA 3.6B 3.6\n            ",
+  "r": [
+   52,
+   46,
+   1004,
+   184
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "knobs": {
+  "t": "\n              Channel one \u00b7 Left24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n              \n                \n                Left / RightLat / Vert\n                LinkLevel Match\n                Needle: GRNeedle: Level\n                Side-chain HPOff60 Hz120 Hz240 Hz\n                Output-120+12+2.0 dBMix050100100%\n              \n              Channel two \u00b7 Right24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s\n            ",
+  "r": [
+   52,
+   230,
+   1004,
+   318
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "rig": {
+  "t": "\n              \u25b6 Play preview\n              \n                Full mix loopDrum loopBassChord stabsYour file\n              \n              Load file\n              \n              Bypass (B) switches between processed and dry so you can compare.\n              Preview rig, not part of the plugin\n            ",
+  "r": [
+   52,
+   548,
+   1004,
+   66
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "meters": {
+  "t": "\n            InOut\n            \n            -13.7-15.6\n          ",
+  "r": [
+   1056,
+   46,
+   92,
+   568
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "foot": {
+  "t": "Studio 87 \u00b7 Furchild v0.1 design mockup1200 \u00d7 640 px",
+  "r": [
+   52,
+   614,
+   1096,
+   26
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 12,
+  "fw": 400,
+  "ls": 1,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "logo": {
+  "t": "",
+  "r": [
+   64,
+   5.5,
+   34,
+   34
+  ],
+  "tip": "",
+  "aria": "Cat head logo",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "name": {
+  "t": "Furchild",
+  "r": [
+   106,
+   9,
+   114.36,
+   27
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 27,
+  "fw": 700,
+  "ls": 0.3,
+  "tt": "none",
+  "mono": false,
+  "mark": true,
+  "color": "rgb(255, 255, 255)"
+ },
+ "s87": {
+  "t": "Studio 87",
+  "r": [
+   228.36,
+   15.5,
+   59.78,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 12,
+  "fw": 400,
+  "ls": 2,
+  "tt": "uppercase",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "grpA": {
+  "t": "Channel one \u00b7 Left24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s",
+  "r": [
+   62,
+   238,
+   370,
+   302
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "grpB": {
+  "t": "Channel two \u00b7 Right24201612108654321Input06121824+0 dBThreshold02468102.0-6.4 dB thrTime123456FASTSLOWTC 3 fixedAttack 0.4 msRelease 2 s",
+  "r": [
+   676,
+   238,
+   370,
+   302
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "mid": {
+  "t": "\n                \n                Left / RightLat / Vert\n                LinkLevel Match\n                Needle: GRNeedle: Level\n                Side-chain HPOff60 Hz120 Hz240 Hz\n                Output-120+12+2.0 dBMix050100100%\n              ",
+  "r": [
+   447,
+   238,
+   214,
+   302
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "midK": {
+  "t": "Output-120+12+2.0 dBMix050100100%",
+  "r": [
+   447,
+   410.98,
+   214,
+   125
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "pPrev": {
+  "t": "\u25c0",
+  "r": [
+   389.09,
+   10.09,
+   35.34,
+   24.8
+  ],
+  "tip": "Previous preset.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "pName": {
+  "t": "Start Here",
+  "r": [
+   428.44,
+   8.91,
+   200,
+   27.19
+  ],
+  "tip": "Open the preset browser. Double-click to rename your own preset.",
+  "aria": "",
+  "fs": 16,
+  "fw": 600,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "pNext": {
+  "t": "\u25b6",
+  "r": [
+   632.44,
+   10.09,
+   35.34,
+   24.8
+  ],
+  "tip": "Next preset.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "pSave": {
+  "t": "Save",
+  "r": [
+   671.78,
+   10.09,
+   47.08,
+   24.8
+  ],
+  "tip": "Save these settings as your own preset. Asks before overwriting.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "bBypass": {
+  "t": "Bypass",
+  "r": [
+   819.83,
+   10.09,
+   59.36,
+   24.8
+  ],
+  "tip": "Bypass: hear the dry signal to compare with the processed sound (B). The meters keep moving.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "bGuide": {
+  "t": "Guide",
+  "r": [
+   889.19,
+   10.09,
+   51.8,
+   24.8
+  ],
+  "tip": "Short guide and keyboard shortcuts.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "bSettings": {
+  "t": "Settings",
+  "r": [
+   950.98,
+   10.09,
+   65.81,
+   24.8
+  ],
+  "tip": "Info bubbles, power saving, colour look.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "bAbout": {
+  "t": "About & Support",
+  "r": [
+   1026.8,
+   10.09,
+   109.2,
+   24.8
+  ],
+  "tip": "About Furchild, support and where your files live.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "mLR": {
+  "t": "Left / Right",
+  "r": [
+   447,
+   295,
+   105,
+   23.59
+  ],
+  "tip": "Left / Right treats the left and right sides as two channels. Try: use this for most sources.",
+  "aria": "",
+  "fs": 13,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(225, 203, 244)"
+ },
+ "mLV": {
+  "t": "Lat / Vert",
+  "r": [
+   556,
+   295,
+   105,
+   23.59
+  ],
+  "tip": "Lat / Vert splits the sound into the middle (sum) and the sides (difference) and squeezes each on its own. Try: a master where the centre is too loud but the width is fine.",
+  "aria": "",
+  "fs": 13,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "bLink": {
+  "t": "Link",
+  "r": [
+   447,
+   323.59,
+   105,
+   24.8
+  ],
+  "tip": "Link makes both channels turn down together, so the stereo picture does not lean to one side. Try: keep it on, turn it off only to set each channel separately.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(225, 203, 244)"
+ },
+ "bLevel": {
+  "t": "Level Match",
+  "r": [
+   556,
+   323.59,
+   105,
+   24.8
+  ],
+  "tip": "Level Match keeps the processed sound as loud as the original so you judge the tone, not the volume. Try: switch it on, press Bypass (B) to compare, then switch it off.",
+  "aria": "",
+  "fs": 14,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "mtR": {
+  "t": "Needle: GR",
+  "r": [
+   447,
+   353.39,
+   105,
+   23.59
+  ],
+  "tip": "Needle shows gain reduction: how many dB the gain is turned down.",
+  "aria": "",
+  "fs": 13,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(225, 203, 244)"
+ },
+ "mtL": {
+  "t": "Needle: Level",
+  "r": [
+   556,
+   353.39,
+   105,
+   23.59
+  ],
+  "tip": "Needle shows output level in dB.",
+  "aria": "",
+  "fs": 13,
+  "fw": 400,
+  "ls": 0.5,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "selHP": {
+  "t": "Off60 Hz120 Hz240 Hz",
+  "r": [
+   568.86,
+   381.98,
+   61,
+   24
+  ],
+  "tip": "Side-chain HP stops deep bass from triggering the squeeze, so the low end stays full. The sound itself is not filtered. Try: 120 Hz on a mix with a big kick.",
+  "aria": "Side-chain high-pass",
+  "fs": 13,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cvDialA": {
+  "t": "",
+  "r": [
+   62,
+   70,
+   212,
+   138
+  ],
+  "tip": "Needle meter for the first channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cvDialB": {
+  "t": "",
+  "r": [
+   282,
+   70,
+   212,
+   138
+  ],
+  "tip": "Needle meter for the second channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cvCurve": {
+  "t": "",
+  "r": [
+   502,
+   70,
+   242,
+   138
+  ],
+  "tip": "Input level (across) against output level (up). The bend is soft and gets steeper the harder you push, like a variable-mu tube stage. Amber is channel one, pink is channel two. The dashed line marks the threshold. The dot is the live signal.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cvHist": {
+  "t": "",
+  "r": [
+   752,
+   70,
+   290,
+   138
+  ],
+  "tip": "How much each channel turned the signal down, over the last six seconds. Amber is channel one, pink is channel two.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cvTubes": {
+  "t": "",
+  "r": [
+   447,
+   238,
+   214,
+   52
+  ],
+  "tip": "Four valves. The glow follows the gain reduction of each channel: two for channel one, two for channel two.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cvIn": {
+  "t": "",
+  "r": [
+   1062.5,
+   70,
+   38,
+   300
+  ],
+  "tip": "Input level in dB, before the plugin. The small block at the top lights at 0 dB and stays lit. Click the meter to clear it.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "cvOut": {
+  "t": "",
+  "r": [
+   1104.5,
+   70,
+   38,
+   300
+  ],
+  "tip": "Output level in dB, after the plugin. The small block at the top lights at 0 dB and stays lit. Click the meter to clear it.",
+  "aria": "",
+  "fs": 16,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(244, 245, 247)"
+ },
+ "pkIn": {
+  "t": "-13.7",
+  "r": [
+   1066.5,
+   374,
+   33,
+   14
+  ],
+  "tip": "Highest input level in dB.",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "pkOut": {
+  "t": "-15.6",
+  "r": [
+   1105.5,
+   374,
+   33,
+   14
+  ],
+  "tip": "Highest output level in dB.",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "winsz": {
+  "t": "1200 \u00d7 640 px",
+  "r": [
+   1066.73,
+   620.5,
+   69.27,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 12,
+  "fw": 400,
+  "ls": 1,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "capA": {
+  "t": "Left",
+  "r": [
+   62,
+   54,
+   212,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 12,
+  "fw": 400,
+  "ls": 1.5,
+  "tt": "uppercase",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(232, 233, 238)"
+ },
+ "capB": {
+  "t": "Right",
+  "r": [
+   282,
+   54,
+   212,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 12,
+  "fw": 400,
+  "ls": 1.5,
+  "tt": "uppercase",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(232, 233, 238)"
+ },
+ "dsA": {
+  "t": "TC 3",
+  "r": [
+   64,
+   210,
+   26.41,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "dtA": {
+  "t": "GR 3.6 dB",
+  "r": [
+   212.59,
+   210,
+   59.41,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "dsB": {
+  "t": "TC 3",
+  "r": [
+   284,
+   210,
+   26.41,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "dtB": {
+  "t": "GR 3.6 dB",
+  "r": [
+   432.59,
+   210,
+   59.41,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "hsA": {
+  "t": "A 3.6",
+  "r": [
+   754,
+   210,
+   33,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "hsB": {
+  "t": "B 3.6",
+  "r": [
+   1007,
+   210,
+   33,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 11,
+  "fw": 400,
+  "ls": 0,
+  "tt": "none",
+  "mono": true,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "ghA": {
+  "t": "Channel one \u00b7 Left",
+  "r": [
+   159.75,
+   245,
+   174.5,
+   18
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 14,
+  "fw": 700,
+  "ls": 4,
+  "tt": "uppercase",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(232, 233, 238)"
+ },
+ "ghB": {
+  "t": "Channel two \u00b7 Right",
+  "r": [
+   767.89,
+   245,
+   186.22,
+   18
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 14,
+  "fw": 700,
+  "ls": 4,
+  "tt": "uppercase",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(232, 233, 238)"
+ },
+ "dcells": [
+  {
+   "cap": {
+    "t": "Left",
+    "r": [
+     62,
+     54,
+     212,
+     14
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 12,
+    "fw": 400,
+    "ls": 1.5,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "cv": {
+    "t": "",
+    "r": [
+     62,
+     70,
+     212,
+     138
+    ],
+    "tip": "Needle meter for the first channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB.",
+    "aria": "",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "sub": [
+    {
+     "t": "TC 3",
+     "r": [
+      64,
+      210,
+      26.41,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    {
+     "t": "GR 3.6 dB",
+     "r": [
+      212.59,
+      210,
+      59.41,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    }
+   ]
+  },
+  {
+   "cap": {
+    "t": "Right",
+    "r": [
+     282,
+     54,
+     212,
+     14
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 12,
+    "fw": 400,
+    "ls": 1.5,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "cv": {
+    "t": "",
+    "r": [
+     282,
+     70,
+     212,
+     138
+    ],
+    "tip": "Needle meter for the second channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB.",
+    "aria": "",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "sub": [
+    {
+     "t": "TC 3",
+     "r": [
+      284,
+      210,
+      26.41,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    {
+     "t": "GR 3.6 dB",
+     "r": [
+      432.59,
+      210,
+      59.41,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    }
+   ]
+  },
+  {
+   "cap": {
+    "t": "Transfer curve",
+    "r": [
+     502,
+     54,
+     242,
+     14
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 12,
+    "fw": 400,
+    "ls": 1.5,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "cv": {
+    "t": "",
+    "r": [
+     502,
+     70,
+     242,
+     138
+    ],
+    "tip": "Input level (across) against output level (up). The bend is soft and gets steeper the harder you push, like a variable-mu tube stage. Amber is channel one, pink is channel two. The dashed line marks the threshold. The dot is the live signal.",
+    "aria": "",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "sub": [
+    {
+     "t": "dB in",
+     "r": [
+      504,
+      210,
+      33,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    {
+     "t": "dB out",
+     "r": [
+      702.39,
+      210,
+      39.61,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    }
+   ]
+  },
+  {
+   "cap": {
+    "t": "Gain reduction, last 6 s",
+    "r": [
+     752,
+     54,
+     290,
+     14
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 12,
+    "fw": 400,
+    "ls": 1.5,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "cv": {
+    "t": "",
+    "r": [
+     752,
+     70,
+     290,
+     138
+    ],
+    "tip": "How much each channel turned the signal down, over the last six seconds. Amber is channel one, pink is channel two.",
+    "aria": "",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "sub": [
+    {
+     "t": "A 3.6",
+     "r": [
+      754,
+      210,
+      33,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    {
+     "t": "B 3.6",
+     "r": [
+      1007,
+      210,
+      33,
+      14
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    }
+   ]
+  }
+ ],
+ "mcap": [
+  {
+   "t": "In",
+   "r": [
+    1062.64,
+    54,
+    11.66,
+    14
+   ],
+   "tip": "",
+   "aria": "",
+   "fs": 12,
+   "fw": 400,
+   "ls": 1.5,
+   "tt": "uppercase",
+   "mono": false,
+   "mark": false,
+   "color": "rgb(232, 233, 238)"
+  },
+  {
+   "t": "Out",
+   "r": [
+    1100.3,
+    54,
+    21.05,
+    14
+   ],
+   "tip": "",
+   "aria": "",
+   "fs": 12,
+   "fw": 400,
+   "ls": 1.5,
+   "tt": "uppercase",
+   "mono": false,
+   "mark": false,
+   "color": "rgb(232, 233, 238)"
+  }
+ ],
+ "hpCap": {
+  "t": "Side-chain HP",
+  "r": [
+   478.14,
+   386.98,
+   86.72,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 12,
+  "fw": 400,
+  "ls": 2,
+  "tt": "uppercase",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(232, 233, 238)"
+ },
+ "footL": {
+  "t": "Studio 87 \u00b7 Furchild v0.1 design mockup",
+  "r": [
+   64,
+   620.5,
+   202.42,
+   14
+  ],
+  "tip": "",
+  "aria": "",
+  "fs": 12,
+  "fw": 400,
+  "ls": 1,
+  "tt": "none",
+  "mono": false,
+  "mark": false,
+  "color": "rgb(169, 173, 184)"
+ },
+ "ladders": [
+  [
+   {
+    "n": {
+     "t": "24",
+     "r": [
+      81.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     81.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 19, 131)"
+   },
+   {
+    "n": {
+     "t": "20",
+     "r": [
+      110.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     110.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 19, 131)"
+   },
+   {
+    "n": {
+     "t": "16",
+     "r": [
+      139.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     139.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 19, 131)"
+   },
+   {
+    "n": {
+     "t": "12",
+     "r": [
+      168.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     168.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(245, 127, 1)"
+   },
+   {
+    "n": {
+     "t": "10",
+     "r": [
+      197.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     197.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(245, 127, 1)"
+   },
+   {
+    "n": {
+     "t": "8",
+     "r": [
+      229.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     226.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 209, 0)"
+   },
+   {
+    "n": {
+     "t": "6",
+     "r": [
+      258.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     255.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 209, 0)"
+   },
+   {
+    "n": {
+     "t": "5",
+     "r": [
+      287.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     284.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 209, 0)"
+   },
+   {
+    "n": {
+     "t": "4",
+     "r": [
+      316.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     313.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   },
+   {
+    "n": {
+     "t": "3",
+     "r": [
+      345.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     342.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   },
+   {
+    "n": {
+     "t": "2",
+     "r": [
+      374.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     371.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   },
+   {
+    "n": {
+     "t": "1",
+     "r": [
+      403.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     400.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   }
+  ],
+  [
+   {
+    "n": {
+     "t": "24",
+     "r": [
+      695.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     695.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 19, 131)"
+   },
+   {
+    "n": {
+     "t": "20",
+     "r": [
+      724.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     724.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 19, 131)"
+   },
+   {
+    "n": {
+     "t": "16",
+     "r": [
+      753.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     753.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 19, 131)"
+   },
+   {
+    "n": {
+     "t": "12",
+     "r": [
+      782.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     782.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(245, 127, 1)"
+   },
+   {
+    "n": {
+     "t": "10",
+     "r": [
+      811.5,
+      265,
+      12,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     811.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(245, 127, 1)"
+   },
+   {
+    "n": {
+     "t": "8",
+     "r": [
+      843.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     840.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 209, 0)"
+   },
+   {
+    "n": {
+     "t": "6",
+     "r": [
+      872.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     869.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 209, 0)"
+   },
+   {
+    "n": {
+     "t": "5",
+     "r": [
+      901.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     898.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(255, 209, 0)"
+   },
+   {
+    "n": {
+     "t": "4",
+     "r": [
+      930.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     927.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   },
+   {
+    "n": {
+     "t": "3",
+     "r": [
+      959.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     956.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   },
+   {
+    "n": {
+     "t": "2",
+     "r": [
+      988.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     985.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   },
+   {
+    "n": {
+     "t": "1",
+     "r": [
+      1017.5,
+      265,
+      6,
+      12
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 10,
+     "fw": 400,
+     "ls": 0,
+     "tt": "none",
+     "mono": true,
+     "mark": false,
+     "color": "rgb(169, 173, 184)"
+    },
+    "led": [
+     1014.5,
+     280,
+     12,
+     12
+    ],
+    "color": "rgb(2, 235, 186)"
+   }
+  ]
+ ],
+ "ladderBox": [
+  {
+   "t": "24201612108654321",
+   "r": [
+    73,
+    265,
+    348,
+    27
+   ],
+   "tip": "Gain reduction in dB for this channel. More lights, more turned down. Numbers are dB.",
+   "aria": "",
+   "fs": 16,
+   "fw": 400,
+   "ls": 0,
+   "tt": "none",
+   "mono": false,
+   "mark": false,
+   "color": "rgb(244, 245, 247)"
+  },
+  {
+   "t": "24201612108654321",
+   "r": [
+    687,
+    265,
+    348,
+    27
+   ],
+   "tip": "Gain reduction in dB for this channel. More lights, more turned down. Numbers are dB.",
+   "aria": "",
+   "fs": 16,
+   "fw": 400,
+   "ls": 0,
+   "tt": "none",
+   "mono": false,
+   "mark": false,
+   "color": "rgb(244, 245, 247)"
+  }
+ ],
+ "cells": [
+  {
+   "lab": {
+    "t": "Input",
+    "r": [
+     106.41,
+     296,
+     45.19,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "06121824",
+    "r": [
+     75,
+     314,
+     108,
+     111
+    ],
+    "tip": "Input sets how hard the signal hits the compressor, in 1 dB steps (0 to +24). More input means more gain reduction and more tube colour. Try: raise it 1 dB at a time until the needle moves 3 to 6 dB.",
+    "aria": "Input",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "+0 dB",
+    "r": [
+     112.5,
+     423,
+     33,
+     30
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "+0 dB",
+     "b": true,
+     "x": 112.5,
+     "y": 423,
+     "w": 33,
+     "h": 14
+    }
+   ],
+   "ends": [],
+   "cell": [
+    71,
+    296,
+    116,
+    181
+   ]
+  },
+  {
+   "lab": {
+    "t": "Threshold",
+    "r": [
+     204.41,
+     296,
+     85.19,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "0246810",
+    "r": [
+     193,
+     314,
+     108,
+     111
+    ],
+    "tip": "Threshold is the level where the box starts turning things down. At 0 only the loudest peaks are caught, higher numbers catch quieter sound too. Try: start at 2 and raise it until you see about 3 dB of gain reduction on the loud parts.",
+    "aria": "Threshold",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "2.0-6.4 dB thr",
+    "r": [
+     210.69,
+     423,
+     72.61,
+     30
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "2.0",
+     "b": true,
+     "x": 237.08,
+     "y": 423,
+     "w": 19.81,
+     "h": 14
+    },
+    {
+     "t": "-6.4 dB thr",
+     "b": false,
+     "x": 210.69,
+     "y": 438,
+     "w": 72.61,
+     "h": 14
+    }
+   ],
+   "ends": [],
+   "cell": [
+    189,
+    296,
+    116,
+    181
+   ]
+  },
+  {
+   "lab": {
+    "t": "Time",
+    "r": [
+     347.2,
+     296,
+     35.58,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "123456",
+    "r": [
+     311,
+     314,
+     108,
+     111
+    ],
+    "tip": "Time sets how fast the box grabs a loud sound (attack) and how slowly it lets go (release). Left is FAST and punchy, right is SLOW and smooth. Try: 2 for vocals and drums, 5 or 6 for a whole mix.",
+    "aria": "Time constant",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "TC 3 fixedAttack 0.4 msRelease 2 s",
+    "r": [
+     322.09,
+     434,
+     85.81,
+     43
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "TC 3",
+     "b": true,
+     "x": 331.98,
+     "y": 434,
+     "w": 26.41,
+     "h": 14
+    },
+    {
+     "t": " fixed",
+     "b": false,
+     "x": 358.39,
+     "y": 434,
+     "w": 39.61,
+     "h": 14
+    },
+    {
+     "t": "Attack 0.4 ms",
+     "b": false,
+     "x": 322.09,
+     "y": 449,
+     "w": 85.81,
+     "h": 14
+    },
+    {
+     "t": "Release 2 s",
+     "b": false,
+     "x": 328.69,
+     "y": 463,
+     "w": 72.61,
+     "h": 14
+    }
+   ],
+   "ends": [
+    {
+     "t": "FAST",
+     "r": [
+      309,
+      423,
+      26.11,
+      13
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 2,
+     "tt": "none",
+     "mono": false,
+     "mark": false,
+     "color": "rgb(232, 233, 238)"
+    },
+    {
+     "t": "SLOW",
+     "r": [
+      391.69,
+      423,
+      29.31,
+      13
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 2,
+     "tt": "none",
+     "mono": false,
+     "mark": false,
+     "color": "rgb(232, 233, 238)"
+    }
+   ],
+   "cell": [
+    307,
+    296,
+    116,
+    181
+   ]
+  },
+  {
+   "lab": {
+    "t": "Output",
+    "r": [
+     480.17,
+     410.98,
+     57.66,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "-120+12",
+    "r": [
+     471,
+     428.98,
+     76,
+     79
+    ],
+    "tip": "Output is the volume after the squeeze, -12 to +12 dB. Try: raise it until the sound is as loud as before, so the compressor does not just sound louder.",
+    "aria": "Output",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "+2.0 dB",
+    "r": [
+     485.89,
+     505.98,
+     46.2,
+     30
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "+2.0 dB",
+     "b": true,
+     "x": 485.89,
+     "y": 505.98,
+     "w": 46.2,
+     "h": 14
+    }
+   ],
+   "ends": [],
+   "cell": [
+    467,
+    410.98,
+    84,
+    125
+   ]
+  },
+  {
+   "lab": {
+    "t": "Mix",
+    "r": [
+     585.72,
+     410.98,
+     26.55,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "050100",
+    "r": [
+     561,
+     428.98,
+     76,
+     79
+    ],
+    "tip": "Mix blends the original with the squeezed sound. 100 is all squeezed. Try: 40 to 50 on drums for punch with extra thickness.",
+    "aria": "Mix",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "100%",
+    "r": [
+     585.8,
+     505.98,
+     26.41,
+     30
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "100%",
+     "b": true,
+     "x": 585.8,
+     "y": 505.98,
+     "w": 26.41,
+     "h": 14
+    }
+   ],
+   "ends": [],
+   "cell": [
+    557,
+    410.98,
+    84,
+    125
+   ]
+  },
+  {
+   "lab": {
+    "t": "Input",
+    "r": [
+     720.41,
+     296,
+     45.19,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "06121824",
+    "r": [
+     689,
+     314,
+     108,
+     111
+    ],
+    "tip": "Input sets how hard the signal hits the compressor, in 1 dB steps (0 to +24). More input means more gain reduction and more tube colour. Try: raise it 1 dB at a time until the needle moves 3 to 6 dB.",
+    "aria": "Input",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "+0 dB",
+    "r": [
+     726.5,
+     423,
+     33,
+     30
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "+0 dB",
+     "b": true,
+     "x": 726.5,
+     "y": 423,
+     "w": 33,
+     "h": 14
+    }
+   ],
+   "ends": [],
+   "cell": [
+    685,
+    296,
+    116,
+    181
+   ]
+  },
+  {
+   "lab": {
+    "t": "Threshold",
+    "r": [
+     818.41,
+     296,
+     85.19,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "0246810",
+    "r": [
+     807,
+     314,
+     108,
+     111
+    ],
+    "tip": "Threshold is the level where the box starts turning things down. At 0 only the loudest peaks are caught, higher numbers catch quieter sound too. Try: start at 2 and raise it until you see about 3 dB of gain reduction on the loud parts.",
+    "aria": "Threshold",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "2.0-6.4 dB thr",
+    "r": [
+     824.69,
+     423,
+     72.61,
+     30
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "2.0",
+     "b": true,
+     "x": 851.08,
+     "y": 423,
+     "w": 19.81,
+     "h": 14
+    },
+    {
+     "t": "-6.4 dB thr",
+     "b": false,
+     "x": 824.69,
+     "y": 438,
+     "w": 72.61,
+     "h": 14
+    }
+   ],
+   "ends": [],
+   "cell": [
+    803,
+    296,
+    116,
+    181
+   ]
+  },
+  {
+   "lab": {
+    "t": "Time",
+    "r": [
+     961.2,
+     296,
+     35.58,
+     18
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 14,
+    "fw": 700,
+    "ls": 3,
+    "tt": "uppercase",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(232, 233, 238)"
+   },
+   "knob": {
+    "t": "123456",
+    "r": [
+     925,
+     314,
+     108,
+     111
+    ],
+    "tip": "Time sets how fast the box grabs a loud sound (attack) and how slowly it lets go (release). Left is FAST and punchy, right is SLOW and smooth. Try: 2 for vocals and drums, 5 or 6 for a whole mix.",
+    "aria": "Time constant",
+    "fs": 16,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": false,
+    "mark": false,
+    "color": "rgb(244, 245, 247)"
+   },
+   "kval": {
+    "t": "TC 3 fixedAttack 0.4 msRelease 2 s",
+    "r": [
+     936.09,
+     434,
+     85.81,
+     43
+    ],
+    "tip": "",
+    "aria": "",
+    "fs": 11,
+    "fw": 400,
+    "ls": 0,
+    "tt": "none",
+    "mono": true,
+    "mark": false,
+    "color": "rgb(169, 173, 184)"
+   },
+   "rows": [
+    {
+     "t": "TC 3",
+     "b": true,
+     "x": 945.98,
+     "y": 434,
+     "w": 26.41,
+     "h": 14
+    },
+    {
+     "t": " fixed",
+     "b": false,
+     "x": 972.39,
+     "y": 434,
+     "w": 39.61,
+     "h": 14
+    },
+    {
+     "t": "Attack 0.4 ms",
+     "b": false,
+     "x": 936.09,
+     "y": 449,
+     "w": 85.81,
+     "h": 14
+    },
+    {
+     "t": "Release 2 s",
+     "b": false,
+     "x": 942.69,
+     "y": 463,
+     "w": 72.61,
+     "h": 14
+    }
+   ],
+   "ends": [
+    {
+     "t": "FAST",
+     "r": [
+      923,
+      423,
+      26.11,
+      13
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 2,
+     "tt": "none",
+     "mono": false,
+     "mark": false,
+     "color": "rgb(232, 233, 238)"
+    },
+    {
+     "t": "SLOW",
+     "r": [
+      1005.69,
+      423,
+      29.31,
+      13
+     ],
+     "tip": "",
+     "aria": "",
+     "fs": 11,
+     "fw": 400,
+     "ls": 2,
+     "tt": "none",
+     "mono": false,
+     "mark": false,
+     "color": "rgb(232, 233, 238)"
+    }
+   ],
+   "cell": [
+    921,
+    296,
+    116,
+    181
+   ]
+  }
+ ],
+ "sel": [
+  "Off",
+  "60 Hz",
+  "120 Hz",
+  "240 Hz"
+ ],
+ "topTips": [
+  {
+   "id": "cheekL",
+   "tip": "Double-click the wood to reset the window to 100%."
+  },
+  {
+   "id": "pPrev",
+   "tip": "Previous preset."
+  },
+  {
+   "id": "pName",
+   "tip": "Open the preset browser. Double-click to rename your own preset."
+  },
+  {
+   "id": "pNext",
+   "tip": "Next preset."
+  },
+  {
+   "id": "pSave",
+   "tip": "Save these settings as your own preset. Asks before overwriting."
+  },
+  {
+   "id": "bBypass",
+   "tip": "Bypass: hear the dry signal to compare with the processed sound (B). The meters keep moving."
+  },
+  {
+   "id": "bGuide",
+   "tip": "Short guide and keyboard shortcuts."
+  },
+  {
+   "id": "bSettings",
+   "tip": "Info bubbles, power saving, colour look."
+  },
+  {
+   "id": "bAbout",
+   "tip": "About Furchild, support and where your files live."
+  },
+  {
+   "id": "cvDialA",
+   "tip": "Needle meter for the first channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB."
+  },
+  {
+   "id": "cvDialB",
+   "tip": "Needle meter for the second channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB."
+  },
+  {
+   "id": "cvCurve",
+   "tip": "Input level (across) against output level (up). The bend is soft and gets steeper the harder you push, like a variable-mu tube stage. Amber is channel one, pink is channel two. The dashed line marks the threshold. The dot is the live signal."
+  },
+  {
+   "id": "cvHist",
+   "tip": "How much each channel turned the signal down, over the last six seconds. Amber is channel one, pink is channel two."
+  },
+  {
+   "id": "ladder",
+   "tip": "Gain reduction in dB for this channel. More lights, more turned down. Numbers are dB."
+  },
+  {
+   "id": "knob",
+   "tip": "Input sets how hard the signal hits the compressor, in 1 dB steps (0 to +24). More input means more gain reduction and more tube colour. Try: raise it 1 dB at a time until the needle moves 3 to 6 dB."
+  },
+  {
+   "id": "knob",
+   "tip": "Threshold is the level where the box starts turning things down. At 0 only the loudest peaks are caught, higher numbers catch quieter sound too. Try: start at 2 and raise it until you see about 3 dB of gain reduction on the loud parts."
+  },
+  {
+   "id": "knob",
+   "tip": "Time sets how fast the box grabs a loud sound (attack) and how slowly it lets go (release). Left is FAST and punchy, right is SLOW and smooth. Try: 2 for vocals and drums, 5 or 6 for a whole mix."
+  },
+  {
+   "id": "cvTubes",
+   "tip": "Four valves. The glow follows the gain reduction of each channel: two for channel one, two for channel two."
+  },
+  {
+   "id": "mLR",
+   "tip": "Left / Right treats the left and right sides as two channels. Try: use this for most sources."
+  },
+  {
+   "id": "mLV",
+   "tip": "Lat / Vert splits the sound into the middle (sum) and the sides (difference) and squeezes each on its own. Try: a master where the centre is too loud but the width is fine."
+  },
+  {
+   "id": "bLink",
+   "tip": "Link makes both channels turn down together, so the stereo picture does not lean to one side. Try: keep it on, turn it off only to set each channel separately."
+  },
+  {
+   "id": "bLevel",
+   "tip": "Level Match keeps the processed sound as loud as the original so you judge the tone, not the volume. Try: switch it on, press Bypass (B) to compare, then switch it off."
+  },
+  {
+   "id": "mtR",
+   "tip": "Needle shows gain reduction: how many dB the gain is turned down."
+  },
+  {
+   "id": "mtL",
+   "tip": "Needle shows output level in dB."
+  },
+  {
+   "id": "selHP",
+   "tip": "Side-chain HP stops deep bass from triggering the squeeze, so the low end stays full. The sound itself is not filtered. Try: 120 Hz on a mix with a big kick."
+  },
+  {
+   "id": "knob",
+   "tip": "Output is the volume after the squeeze, -12 to +12 dB. Try: raise it until the sound is as loud as before, so the compressor does not just sound louder."
+  },
+  {
+   "id": "knob",
+   "tip": "Mix blends the original with the squeezed sound. 100 is all squeezed. Try: 40 to 50 on drums for punch with extra thickness."
+  },
+  {
+   "id": "ladder",
+   "tip": "Gain reduction in dB for this channel. More lights, more turned down. Numbers are dB."
+  },
+  {
+   "id": "knob",
+   "tip": "Input sets how hard the signal hits the compressor, in 1 dB steps (0 to +24). More input means more gain reduction and more tube colour. Try: raise it 1 dB at a time until the needle moves 3 to 6 dB."
+  },
+  {
+   "id": "knob",
+   "tip": "Threshold is the level where the box starts turning things down. At 0 only the loudest peaks are caught, higher numbers catch quieter sound too. Try: start at 2 and raise it until you see about 3 dB of gain reduction on the loud parts."
+  },
+  {
+   "id": "knob",
+   "tip": "Time sets how fast the box grabs a loud sound (attack) and how slowly it lets go (release). Left is FAST and punchy, right is SLOW and smooth. Try: 2 for vocals and drums, 5 or 6 for a whole mix."
+  },
+  {
+   "id": "rigPlay",
+   "tip": "Start or stop the preview sound (Space)."
+  },
+  {
+   "id": "rigSrc",
+   "tip": "Test sound for the preview. The meters and displays move even when it is not playing."
+  },
+  {
+   "id": "rigFile",
+   "tip": "Load your own audio file for the preview. Nothing is uploaded."
+  },
+  {
+   "id": "cvIn",
+   "tip": "Input level in dB, before the plugin. The small block at the top lights at 0 dB and stays lit. Click the meter to clear it."
+  },
+  {
+   "id": "cvOut",
+   "tip": "Output level in dB, after the plugin. The small block at the top lights at 0 dB and stays lit. Click the meter to clear it."
+  },
+  {
+   "id": "pkIn",
+   "tip": "Highest input level in dB."
+  },
+  {
+   "id": "pkOut",
+   "tip": "Highest output level in dB."
+  },
+  {
+   "id": "cheekR",
+   "tip": "Double-click the wood to reset the window to 100%."
+  },
+  {
+   "id": "zPct",
+   "tip": ""
+  }
+ ]
+}
