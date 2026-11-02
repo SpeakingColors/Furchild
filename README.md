@@ -1,23 +1,27 @@
 # Furchild
 
-A free, open source, cat-themed take on a classic stereo variable-mu tube limiting amplifier (VST3, Linux first).
+A free, open source, cat-themed take on a classic stereo variable-mu tube limiting amplifier (VST3 for Linux, Windows and macOS).
 
-<p align="center"><img src="docs/screenshot.png" width="900" alt="Furchild design mockup"></p>
-<p align="center"><sub>The interactive design mockup (screenshot). The plugin window will follow it exactly.</sub></p>
+<p align="center"><img src="docs/screenshot.png" width="900" alt="The Furchild plugin window"></p>
+<p align="center"><sub>The real plugin window, rendered by the plugin itself.</sub></p>
 
 ## Status
-Design mockup only. The interactive mockup in `docs/mockup/` runs a WebAudio preview of the planned behaviour. The plugin itself is not built yet; the approved mockup will be ported natively to JUCE (VST3, Linux first). No manual yet: it ships with the plugin.
+Pre-release test build (v0.1.0). The plugin is built from the approved mockup. CI builds it on Linux, Windows and macOS and runs the DSP tests and pluginval (strictness 5) on Linux. Not yet checked: real Windows and macOS hosts, a real Flatpak DAW, and listening tests against the hardware it is inspired by. See [ROADMAP.md](ROADMAP.md).
 
-## Try the mockup
-Open `docs/mockup/Furchild.html` in a browser. Nothing is sent anywhere; it works offline (fonts load from Google Fonts when online, with a fallback).
+## Download
+Get the single zip from the [Releases page](https://github.com/SpeakingColors/Furchild/releases). It holds a Windows installer (with uninstaller), a macOS installer (with an Uninstall app), a Linux Flatpak extension and plain .vst3 tarball, the PDF manual, INSTALL.txt, LICENSE and SHA256SUMS. Everything works offline.
 
-## Controls in the mockup
-Input, Threshold, Time constant, Output, Mix
+## Why the installers show a warning
+The installers are unsigned: code signing certificates cost money every year and this project is free. Windows may show a blue "unknown publisher" screen (More info, Run anyway). macOS may ask you to allow the package in System Settings, Privacy and Security. Check your download against SHA256SUMS if you like.
 
-Every control has a hover info bubble (40 in total).
+## Controls
+Two channels with Input, Threshold and Time (six time constants, two automatic), Left / Right or Lat / Vert mode, Link, Level Match, side-chain high-pass, Output, Mix, Bypass, 16 factory presets plus your own, three looks, a resizable window and hover info bubbles on every control. Details are in the manual inside the zip.
+
+## The design mockup
+The original interactive mockup is kept in `docs/mockup/Furchild.html` (WebAudio preview; it works offline).
 
 ## Privacy
-Collects nothing. No network access.
+Collects nothing. No network access, no telemetry, no accounts.
 
 ## Support
 <p align="center">

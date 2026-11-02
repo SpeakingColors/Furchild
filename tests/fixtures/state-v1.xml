@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FURCHILD look="B" meter="1" preset="Mid Side Master" stateVersion="1">
+  <PARAM id="bypass" value="0.0"/>
+  <PARAM id="hp" value="3.0"/>
+  <PARAM id="inA" value="7.0"/>
+  <PARAM id="inB" value="3.0"/>
+  <PARAM id="levelMatch" value="1.0"/>
+  <PARAM id="link" value="0.0"/>
+  <PARAM id="mix" value="40.0"/>
+  <PARAM id="mode" value="1.0"/>
+  <PARAM id="out" value="-3.499999761581421"/>
+  <PARAM id="tcA" value="5.0"/>
+  <PARAM id="tcB" value="1.0"/>
+  <PARAM id="thA" value="4.5"/>
+  <PARAM id="thB" value="1.5"/>
+</FURCHILD>

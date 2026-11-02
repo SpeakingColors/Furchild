@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Furchild manual</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--bg:#0b0b0d;--card:#16171a;--line:#33363d;--ink:#e8e9ee;--dim:#a9adb8;--acc:#FFA600;--pink:#FF7BB1}
+@media print{:root{--bg:#fff;--card:#f4f4f6;--line:#c9cbd3;--ink:#16171a;--dim:#4a4d55;--acc:#9a5f00;--pink:#b0114f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Barlow Condensed","Arial Narrow",Arial,sans-serif;padding:24px max(16px,env(safe-area-inset-left,0px))}
+main{max-width:980px;margin:0 auto}
+h1{font-size:40px;margin:0 0 4px;font-style:italic}
+h2{font-size:26px;margin:32px 0 8px;color:var(--acc);letter-spacing:1px;text-transform:uppercase;break-after:avoid}
+a{color:var(--pink)}
+img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px;display:block;margin:8px 0}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+th{white-space:nowrap}
+code,kbd{font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:3px;padding:0 4px}
+.dim{color:var(--dim)}
+.note{background:var(--card);border-left:3px solid var(--acc);padding:8px 12px;margin:12px 0}
+@media print{body{padding:0}tr{break-inside:avoid}img{break-inside:avoid}}
+</style></head><body><main>
+<h1>Furchild</h1>
+<p class="dim">Manual for version 0.1.0. Studio 87. Free and open source (AGPL-3.0-or-later). Collects nothing, never uses the network.</p>
+<p>A cat-themed stereo tube-style limiting compressor in the class of the classic variable-mu hardware: our own DSP, written from public manuals and measured, not copied.</p>
+
+<h2>Quick start</h2>
+<ol>
+<li>Put Furchild on a track. The first preset, <b>Start Here</b>, is Left / Right, Link on, Time 3.</li>
+<li>Raise <b>Input</b> and <b>Threshold</b> until the needles show 3 to 6 dB of gain reduction on the loud parts.</li>
+<li>Compare with <b>Bypass</b> (B). Switch on <b>Level Match</b> for a fair comparison, and off again when done.</li>
+<li>For parallel compression lower <b>Mix</b>. For a master, try Time 5 or 6 and Lat / Vert.</li>
+</ol>
+
+<h2>Signal flow</h2>
+<p>Input gain, then the variable-mu gain stage (steered by the side-chain, with its optional high-pass), the tube colour stage, a 10 Hz DC blocker, Output gain, Level Match, a soft ceiling, then Mix against the delayed dry signal. In Lat / Vert the sum and difference are compressed on their own and put back. Link makes channel one's Input, Threshold and Time rule both channels.</p>
+
+<h2>Interface tour</h2>
+<img src="manual/tour.png" alt="The Furchild window with numbered controls">
+<img src="manual/header.png" alt="Header">
+<img src="manual/displays.png" alt="Displays: needle meters, transfer curve and gain reduction history">
+<img src="manual/controls.png" alt="Controls">
+<table><tr><th>#</th><th>Control</th><th>What it does</th><th>Range</th><th>Default</th></tr>
+<tr><td>1</td><th>Preset bar</th><td>Arrows step through presets. The name opens the preset browser (search, type chips, load, export, edit, delete). Double-click the name to rename one of your own. Save stores the current settings as your own preset and asks before overwriting. A star after the name means the settings differ from the loaded preset.</td><td>16 factory presets + yours</td><td>Start Here</td></tr>
+<tr><td>2</td><th>Bypass</th><td>Bypass: hear the dry signal to compare with the processed sound (B). The meters keep moving. Switching is crossfaded over about 10 ms, no clicks. Shortcut B.</td><td>on / off</td><td>off</td></tr>
+<tr><td>3</td><th>Guide</th><td>Short guide and keyboard shortcuts.</td><td></td><td></td></tr>
+<tr><td>4</td><th>Settings</th><td>Info bubbles, power saving, colour look. Looks: C charcoal (default), A neon navy, B purple soda pop.</td><td></td><td>Look C, bubbles on</td></tr>
+<tr><td>5</td><th>About &amp; Support</th><td>About Furchild, support and where your files live. Optional Ko-fi link.</td><td></td><td></td></tr>
+<tr><td>6</td><th>Needle meters</th><td>Needle meter for the first channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB.</td><td>Reduce 0 to 20 dB; Level -30 to +3 dB</td><td></td></tr>
+<tr><td>7</td><th>Transfer curve</th><td>Input level (across) against output level (up). The bend is soft and gets steeper the harder you push, like a variable-mu tube stage. Amber is channel one, pink is channel two. The dashed line marks the threshold. The dot is the live signal.</td><td>-60 to +6 dB in, -60 to +18 dB out</td><td></td></tr>
+<tr><td>8</td><th>Gain reduction history</th><td>How much each channel turned the signal down, over the last six seconds. Amber is channel one, pink is channel two.</td><td>0 to 30 dB, 6 s</td><td></td></tr>
+<tr><td>9</td><th>Channel one ladder</th><td>Gain reduction in dB for this channel. More lights, more turned down. Green up to 4 dB, yellow 5 to 8, orange 10 to 12, pink from 16.</td><td>1 to 24 dB</td><td></td></tr>
+<tr><td>10</td><th>Input</th><td>Input sets how hard the signal hits the compressor, in 1 dB steps. More input means more gain reduction and more tube colour.</td><td>0 to +24 dB</td><td>0 dB</td></tr>
+<tr><td>11</td><th>Threshold</th><td>Threshold is the level where the box starts turning things down. 0 catches only the loudest peaks, 10 catches quieter sound too. The row under the knob shows the level in dB (knob x -3.2 dB).</td><td>0 to 10 (0 to -32 dB)</td><td>2</td></tr>
+<tr><td>12</td><th>Time</th><td>Time selects one of six attack and release pairs. 1 to 4 are fixed (attack 0.2, 0.2, 0.4 and 0.8 ms; release 0.3, 0.8, 2 and 5 s). 5 and 6 are automatic: the release stretches when peaks keep coming (5: 2 to 10 s, 6: 0.3 to 25 s).</td><td>TC 1 to TC 6</td><td>TC 3</td></tr>
+<tr><td>13</td><th>Tubes</th><td>Four valves. The glow follows the gain reduction of each channel: two for channel one, two for channel two.</td><td></td><td></td></tr>
+<tr><td>14</td><th>Mode</th><td>Left / Right works on the two sides. Lat / Vert works on the middle (sum) and the sides (difference). Shortcut M.</td><td>Left / Right, Lat / Vert</td><td>Left / Right</td></tr>
+<tr><td>15</td><th>Link</th><td>Link makes both channels turn down together, so the stereo picture does not lean to one side. Try: keep it on, turn it off only to set each channel separately. Shortcut L. Turning Link on copies channel one to channel two.</td><td>on / off</td><td>on</td></tr>
+<tr><td>16</td><th>Level Match</th><td>Level Match keeps the processed sound as loud as the original so you judge the tone, not the volume. Try: switch it on, press Bypass (B) to compare, then switch it off. While on, the button shows the gain it applies.</td><td>on / off</td><td>off</td></tr>
+<tr><td>17</td><th>Needle: GR / Level</th><td>Chooses what the two needle meters show.</td><td>GR, Level</td><td>GR</td></tr>
+<tr><td>18</td><th>Side-chain HP</th><td>Side-chain HP stops deep bass from triggering the squeeze, so the low end stays full. The sound itself is not filtered. Try: 120 Hz on a mix with a big kick.</td><td>Off, 60, 120, 240 Hz</td><td>Off</td></tr>
+<tr><td>19</td><th>Output</th><td>Output is the volume after the squeeze. It is the last gain stage before the Mix.</td><td>-12 to +12 dB</td><td>+2 dB</td></tr>
+<tr><td>20</td><th>Mix</th><td>Mix blends the original with the squeezed sound. 100 is all squeezed. The dry path is delayed by the plugin latency so the blend stays in phase.</td><td>0 to 100 %</td><td>100 %</td></tr>
+<tr><td>21</td><th>In and Out meters</th><td>Peak level, -60 to +6 dB. Blue up to -12, purple up to 0, pink above. The small block at the top marks a clip until you click it. The numbers under the strips are the highest peaks.</td><td>-60 to +6 dB</td><td></td></tr>
+</table>
+
+<h2>Presets</h2>
+<p>16 factory presets are built in. Your own presets are plain text files you can back up or share:</p>
+<ul><li>Linux: <code>~/.local/share/Studio 87/Furchild/presets</code></li><li>Windows: <code>%APPDATA%\Studio 87\Furchild\presets</code></li><li>macOS: <code>~/Library/Application Support/Studio 87/Furchild/presets</code></li></ul>
+<p>Export and Import use plain text you can paste anywhere. A preset does not change Bypass. The loaded preset name and the plugin settings (look, bubbles, power saving, needle view, window size) are saved with the project.</p>
+
+<h2>Keyboard and mouse</h2>
+<table><tr><td><kbd>B</kbd></td><td>Bypass on or off</td></tr><tr><td><kbd>M</kbd> / <kbd>L</kbd></td><td>Mode and Link</td></tr><tr><td>Knobs</td><td>Drag up or down, mouse wheel, arrow keys. Hold Shift for fine steps. Double-click to reset.</td></tr><tr><td>Window</td><td>Drag any edge or corner. It keeps its proportions. Double-click the wood to go back to 100%.</td></tr></table>
+
+<h2>Install and uninstall</h2>
+<p>See INSTALL.txt in the zip. The installers are not signed (signing costs money and this project is free), so Windows may show an "unknown publisher" screen (More info, Run anyway) and macOS may ask you to allow the package in System Settings, Privacy and Security. After installing, rescan plugins in your host.</p>
+
+<h2>Under the hood</h2>
+<p><b>Measured in the core test suite (plain C++, run on every build):</b> the gain reduction follows the variable-mu law to 0.01 dB (ratio rising from about 1:1 to about 12:1 at +36 dB over threshold); attack and release times match the table; Level Match lands within 0.03 dB; the output begins to change within the reported latency of a knob move and reaches 90% of an Input step in about 25 ms (10 ms parameter smoothing); silence stays silent, DC is blocked, full scale square waves and NaN or infinity input stay finite and bounded; bypass and Mix 0 are the input bit for bit, delayed by the latency.</p>
+<p><b>Latency:</b> the tube stage and the soft ceiling run at 2x oversampling, which adds 16 samples at 44.1 and 48 kHz and 0 at 88.2 kHz and above. The plugin reports it to the host.</p>
+<p><b>Aliasing, honestly:</b> with 2x oversampling the tube stage at a 0.9 peak aliases at -76 dB (3 kHz) to -64 dB (15 kHz) relative to the tone; without it the same figures are -74 to -46 dB. The soft ceiling is only engaged when peaks come close to 0 dBFS; driven hard it aliases clearly (about -24 dB at 15 kHz and -47 dB at 3 kHz for a tone peaking at 1.3 before the ceiling). A 4x mode would improve that and is on the roadmap.</p>
+<p><b>Our own choices (no public numbers exist):</b> the shape and knee of the variable-mu law, the size of the tube colour term, the 0.1 s style averaging of Level Match, the ceiling curve, the three side-chain high-pass frequencies. Set by measurement, not yet tuned by ear on real material.</p>
+<p><b>Not verified:</b> behaviour in real hosts on Windows and macOS, the Flatpak extension in a real Flatpak DAW, and a listening comparison with the hardware it is inspired by.</p>
+
+<h2>Licence and thanks</h2>
+<p>AGPL-3.0-or-later. Built with JUCE (AGPLv3). Fonts: Barlow Condensed, JetBrains Mono and Fraunces, SIL Open Font Licence 1.1 (texts in <code>assets/fonts</code>). Source: <a href="https://github.com/SpeakingColors/Furchild">github.com/SpeakingColors/Furchild</a>. Optional support: <a href="https://ko-fi.com/studio87">ko-fi.com/studio87</a>.</p>
+</main></body></html>
