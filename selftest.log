@@ -1,0 +1,20 @@
+ok  : defaults match the mockup
+ok  : all 6 Time items, last item included
+ok  : all 4 side-chain HP items, last item included
+ok  : both modes
+ok  : Input reaches +24 dB
+ok  : Output reaches -12 dB
+ok  : Output reaches +12 dB
+ok  : parameters survive a state round trip
+ok  : settings survive a state round trip
+ok  : factory presets are inside the parameter ranges
+ok  : 16 factory presets
+ok  : reported latency is 16 samples at 48 kHz
+ok  : processing stays finite
+ok  : a mono block is processed
+ok  : editor creates and resizes
+ok  : fixture parses
+ok  : channel values from the v1 fixture
+ok  : mode, link, output, mix, side-chain HP and Level Match from the v1 fixture
+ok  : settings from the v1 fixture
+ALL SELF TESTS PASSED

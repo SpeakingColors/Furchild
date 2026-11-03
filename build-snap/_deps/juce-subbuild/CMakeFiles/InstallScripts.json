@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/runner/work/Furchild/Furchild/build-snap/_deps/juce-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
