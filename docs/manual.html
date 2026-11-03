@@ -2,20 +2,33 @@
 <html lang="en"><head><meta charset="utf-8"><title>Furchild manual</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+<<<<<<< HEAD
 :root{--bg:#0b0b0d;--card:#16171a;--line:#33363d;--ink:#e8e9ee;--dim:#a9adb8;--acc:#FFA600;--pink:#FF7BB1}
 @media print{:root{--bg:#fff;--card:#f4f4f6;--line:#c9cbd3;--ink:#16171a;--dim:#4a4d55;--acc:#9a5f00;--pink:#b0114f}}
+=======
+:root{--bg:#0b0b0d;--card:#16171a;--line:#33363d;--ink:#e8e9ee;--dim:#a9adb8;--teal:#02EBBA;--pink:#FF7BB1}
+@media print{:root{--bg:#fff;--card:#f4f4f6;--line:#c9cbd3;--ink:#16171a;--dim:#4a4d55;--teal:#007a62;--pink:#b0114f}}
+>>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Barlow Condensed","Arial Narrow",Arial,sans-serif;padding:24px max(16px,env(safe-area-inset-left,0px))}
 main{max-width:980px;margin:0 auto}
 h1{font-size:40px;margin:0 0 4px;font-style:italic}
+<<<<<<< HEAD
 h2{font-size:26px;margin:32px 0 8px;color:var(--acc);letter-spacing:1px;text-transform:uppercase;break-after:avoid}
 a{color:var(--pink)}
 img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px;display:block;margin:8px 0}
 table{border-collapse:collapse;width:100%;font-size:15px}
+=======
+h2{font-size:26px;margin:36px 0 8px;color:var(--teal);letter-spacing:1px;text-transform:uppercase;break-after:avoid}
+a{color:var(--pink)}
+img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px;display:block;margin:8px 0}
+table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}
+>>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
 td,th{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
 th{white-space:nowrap}
 code,kbd{font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:3px;padding:0 4px}
 .dim{color:var(--dim)}
+<<<<<<< HEAD
 .note{background:var(--card);border-left:3px solid var(--acc);padding:8px 12px;margin:12px 0}
 @media print{body{padding:0}tr{break-inside:avoid}img{break-inside:avoid}}
 </style></head><body><main>
@@ -83,4 +96,51 @@ code,kbd{font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;backgrou
 
 <h2>Licence and thanks</h2>
 <p>AGPL-3.0-or-later. Built with JUCE (AGPLv3). Fonts: Barlow Condensed, JetBrains Mono and Fraunces, SIL Open Font Licence 1.1 (texts in <code>assets/fonts</code>). Source: <a href="https://github.com/SpeakingColors/Furchild">github.com/SpeakingColors/Furchild</a>. Optional support: <a href="https://ko-fi.com/studio87">ko-fi.com/studio87</a>.</p>
+=======
+@media print{body{padding:0}tr{break-inside:avoid}img{break-inside:avoid}}
+</style></head><body><main>
+<h1>ClawShaper</h1>
+<p class="dim">Manual for version 0.1.0. Studio 87. Free and open source (AGPL-3.0-or-later). Collects nothing, never uses the network.</p>
+<p>A multiband transient shaper with a safety limiter. It turns the punch (attack) and the tail (sustain) of your sound up or down, in up to four bands, and it reacts to changes in level, not to the absolute level.</p>
+
+<h1>Furchild</h1>
+<p class="dim">Manual for version 0.1.0. Studio 87. Free and open source (AGPL-3.0-or-later). Collects nothing, never uses the network.</p>
+<p>A two-channel variable-mu style compressor: the harder the signal pushes, the more it turns down, with a soft knee, from almost 1:1 up to about 20:1. Six time constants (two of them automatic), Left / Right or Lat / Vert operation, a light valve-style colour and a side-chain high-pass.</p>
+
+<h2>Quick start</h2>
+<ol>
+<li>Put Furchild on a track or bus. Pick a preset (for example <b>Vocal Level</b> or <b>Mix Bus Glue</b>) or start from <b>Start Here</b>.</li>
+<li>Raise <b>Input</b> one dB at a time until the needle moves 3 to 6 dB on the loud parts. More input means more gain reduction and more colour.</li>
+<li><b>Threshold</b> sets where squeezing starts. <b>Time</b> sets speed: 1 is the fastest, 4 the slowest fixed one, 5 and 6 are automatic.</li>
+<li>Switch on <b>Level Match</b>, press <b>Bypass</b> (B) to compare, then switch it off again and set <b>Output</b> by ear.</li>
+</ol>
+
+<h2>The window</h2>
+<img src="screenshot.png" alt="Furchild window">
+<table><tr><th>Control</th><th>What it does</th><th>Range</th><th>Default</th></tr><tr><th>Preset arrows, name, Save</th><td>Open the preset browser. Double-click to rename your own preset. Save these settings as your own preset. Asks before overwriting.</td><td>16 factory presets plus yours</td><td>Start Here</td></tr><tr><th>Bypass</th><td>Bypass: hear the dry signal to compare with the processed sound (B). The meters keep moving.</td><td>on or off</td><td>off</td></tr><tr><th>Guide, Settings, About</th><td>Short guide, info bubbles, power saving and colour look, about and where your files live.</td><td></td><td></td></tr><tr><th>Input (per channel)</th><td>Input sets how hard the signal hits the compressor, in 1 dB steps (0 to +24). More input means more gain reduction and more tube colour. Try: raise it 1 dB at a time until the needle moves 3 to 6 dB.</td><td>0 to +24 dB, 1 dB steps</td><td>0 dB</td></tr><tr><th>Threshold (per channel)</th><td>Threshold is the level where the box starts turning things down. At 0 only the loudest peaks are caught, higher numbers catch quieter sound too. Try: start at 2 and raise it until you see about 3 dB of gain reduction on the loud parts.</td><td>0 to 10 (0 = -0 dB, 10 = -32 dB)</td><td>2.0 (-6.4 dB)</td></tr><tr><th>Time (per channel)</th><td>Time sets how fast the box grabs a loud sound (attack) and how slowly it lets go (release). Left is FAST and punchy, right is SLOW and smooth. Try: 2 for vocals and drums, 5 or 6 for a whole mix.</td><td>1 to 6</td><td>3</td></tr><tr><th>Left / Right, Lat / Vert</th><td>Left / Right treats the left and right sides as two channels. Try: use this for most sources. Lat / Vert splits the sound into the middle (sum) and the sides (difference) and squeezes each on its own. Try: a master where the centre is too loud but the width is fine.</td><td></td><td>Left / Right</td></tr><tr><th>Link</th><td>Link makes both channels turn down together, so the stereo picture does not lean to one side. Try: keep it on, turn it off only to set each channel separately.</td><td>on or off</td><td>on</td></tr><tr><th>Level Match</th><td>Level Match keeps the processed sound as loud as the original so you judge the tone, not the volume. Try: switch it on, press Bypass (B) to compare, then switch it off.</td><td>on or off</td><td>off</td></tr><tr><th>Needle: GR, Needle: Level</th><td>Needle shows gain reduction: how many dB the gain is turned down. Needle shows output level in dB.</td><td></td><td>GR</td></tr><tr><th>Side-chain HP</th><td>Side-chain HP stops deep bass from triggering the squeeze, so the low end stays full. The sound itself is not filtered. Try: 120 Hz on a mix with a big kick.</td><td>Off, 60, 120, 240 Hz</td><td>Off</td></tr><tr><th>Output</th><td>Output is the volume after the squeeze, -12 to +12 dB. Try: raise it until the sound is as loud as before, so the compressor does not just sound louder.</td><td>-12 to +12 dB</td><td>+2 dB</td></tr><tr><th>Mix</th><td>Mix blends the original with the squeezed sound. 100 is all squeezed. Try: 40 to 50 on drums for punch with extra thickness.</td><td>0 to 100 %</td><td>100 %</td></tr><tr><th>Needle meters</th><td>Needle meter for the first channel. In Reduce view it shows how many dB the gain is turned down. In Level view it shows the output level in dB.</td><td></td><td></td></tr><tr><th>Transfer curve</th><td>Input level (across) against output level (up). The bend is soft and gets steeper the harder you push, like a variable-mu tube stage. Amber is channel one, pink is channel two. The dashed line marks the threshold. The dot is the live signal.</td><td></td><td></td></tr><tr><th>Gain reduction history</th><td>How much each channel turned the signal down, over the last six seconds. Amber is channel one, pink is channel two.</td><td>6 seconds</td><td></td></tr><tr><th>Valves</th><td>Four valves. The glow follows the gain reduction of each channel: two for channel one, two for channel two.</td><td></td><td></td></tr><tr><th>Gain reduction lights</th><td>Gain reduction in dB for this channel. More lights, more turned down. Numbers are dB.</td><td>1 to 24 dB</td><td></td></tr><tr><th>In and Out meters</th><td>Input level in dB, before the plugin. The small block at the top lights at 0 dB and stays lit. Click the meter to clear it.</td><td>-60 to +6 dB</td><td></td></tr></table>
+
+<h2>How it works</h2>
+<ul>
+<li>The gain reduction follows a soft curve: the ratio rises with level, about 1:1 near the threshold and about 20:1 when pushed hard. The knee is 5 dB wide.</li>
+<li>Attack and release come from six pairs. Pairs 5 and 6 are program dependent: release stretches (2 to 10 s, or 0.3 to 25 s) when peaks keep coming.</li>
+<li>Lat / Vert turns the stereo signal into middle (sum) and sides (difference), squeezes each on its own and turns it back. Link makes both channels follow the louder one.</li>
+<li>A gentle valve-style saturation adds a little colour after the gain stage; a DC blocker and a soft clip above 0.9 keep the output safe.</li>
+<li>No latency: nothing is looked ahead. Mix 100 % is the compressed sound, 0 % the dry input.</li>
+</ul>
+<p class="dim">The gain law, time constants and colour are our own design; they are not copied from any commercial product.</p>
+
+<h2>Keyboard and mouse</h2>
+<table><tr><td><kbd>B</kbd></td><td>Bypass on or off</td></tr><tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>Previous and next preset</td></tr><tr><td>Knobs</td><td>Drag up or down, mouse wheel. Hold Shift for fine steps. Double-click to reset.</td></tr><tr><td>In and Out meters</td><td>Click to clear the clip light.</td></tr><tr><td>Window</td><td>Drag a corner; it keeps its proportions. Double-click the wood to return to 100%.</td></tr><tr><td>Presets</td><td>Save stores your own preset in your user data folder (Studio 87/Furchild/presets). Double-click the preset name to rename your own preset. Presets only ever live on your computer.</td></tr></table>
+
+<h2>Install and uninstall</h2>
+<ul>
+<li><b>Linux:</b> unpack the zip, run <code>install.sh</code> (copies the VST3 to <code>~/.vst3</code>). <code>uninstall.sh</code> removes it.</li>
+<li><b>Windows:</b> run the installer. It adds an uninstaller. Close your DAW first.</li>
+<li><b>macOS:</b> open the package. The build is not notarised, so macOS may ask you to allow it in System Settings, Privacy and Security.</li>
+</ul>
+<p>After installing, rescan plugins in your host.</p>
+
+<h2>Licence and thanks</h2>
+<p>AGPL-3.0-or-later. Built with JUCE (AGPLv3). Fonts: Barlow Condensed and JetBrains Mono (SIL Open Font Licence 1.1), Liberation Serif (SIL Open Font Licence 1.1). Source: <a href="https://github.com/SpeakingColors/Furchild">github.com/SpeakingColors/Furchild</a>.</p>
+>>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
 </main></body></html>

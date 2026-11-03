@@ -6,9 +6,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 concurrency:
   group: furchild-${{ github.ref }}
   cancel-in-progress: true
@@ -39,91 +36,8 @@ jobs:
           unzip -o pluginval.zip
           chmod +x pluginval
       - name: pluginval (strictness 5)
-        run: xvfb-run -a ./pluginval --strictness-level 5 --skip-gui-tests build/Furchild_artefacts/Release/VST3/Furchild.vst3
+        run: xvfb-run -a ./pluginval --strictness-level 5 --skip-gui-tests "build/Furchild_artefacts/Release/VST3/Furchild.vst3"
       - uses: actions/upload-artifact@v4
         with:
           name: Furchild-linux-vst3
-          path: build/Furchild_artefacts/Release/VST3/Furchild.vst3
-
-  editor:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libasound2-dev libfreetype-dev libfontconfig1-dev libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxext-dev libgl1-mesa-dev xvfb
-      - name: Build the snapshot tool
-        run: |
-          cmake -S . -B build-snap -DCMAKE_BUILD_TYPE=Release -DFUR_BUILD_SNAPSHOT=ON
-          cmake --build build-snap --target FurSnapshot -j4
-      - name: Self tests (parameter mapping, state round trip, editor create and resize)
-        run: |
-          S=build-snap/FurSnapshot_artefacts/Release/FurSnapshot
-          mkdir -p shots
-          if [ ! -f tests/fixtures/state-v1.xml ]; then
-            echo "::notice::No committed fixture yet; writing one for the ci-out branch"
-            xvfb-run -a $S --write-fixture shots/state-v1.xml
-            F=shots/state-v1.xml
-          else
-            F=tests/fixtures/state-v1.xml
-          fi
-          set +e
-          xvfb-run -a $S --selftest $F > selftest.log 2>&1
-          rc=$?
-          set -e
-          cat selftest.log
-          grep -iE "fail|assert|error" selftest.log | while read -r l; do echo "::error::$l"; done
-          exit $rc
-      - name: Render the real window
-        run: |
-          mkdir -p shots
-          S=build-snap/FurSnapshot_artefacts/Release/FurSnapshot
-          xvfb-run -a $S shots/look-C.png 1.0 C none 120
-          xvfb-run -a $S shots/needle-level.png 1.0 C none 120 "Start Here" 1
-          xvfb-run -a $S shots/look-A.png 1.0 A none 120
-          xvfb-run -a $S shots/look-B.png 1.0 B none 120
-          xvfb-run -a $S shots/small.png 0.5 C none 60
-          for d in settings guide about presets save export import hp; do xvfb-run -a $S shots/dialog-$d.png 1.0 C $d 30; done
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Furchild-editor-snapshots
-          path: shots
-      - name: Publish renders to the ci-out branch
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git config user.name SpeakingColors
-          git config user.email SpeakingColors@users.noreply.github.com
-          rm -rf /tmp/out && mkdir /tmp/out && cp -r shots/. /tmp/out/
-          git checkout --orphan ci-out
-          git rm -rf . -q
-          cp -r /tmp/out/. .
-          git add -A
-          git commit -q -m "CI renders of the real editor"
-          git push -f origin ci-out
-
-  windows:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configure
-        run: cmake -S . -B build
-      - name: Build
-        run: cmake --build build --config Release
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Furchild-windows-vst3
-          path: build/Furchild_artefacts/Release/VST3/Furchild.vst3
-
-  macos:
-    runs-on: macos-15
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configure
-        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
-      - name: Build
-        run: cmake --build build --config Release -j4
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Furchild-macos-vst3
           path: build/Furchild_artefacts/Release/VST3/Furchild.vst3

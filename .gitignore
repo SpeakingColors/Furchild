@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 build/
 build-snap/
 *.zip
@@ -5,3 +6,7 @@ __pycache__/
 *.pyc
 .DS_Store
 shots/
+=======
+*.bak
+build/
+>>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
