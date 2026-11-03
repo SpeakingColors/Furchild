@@ -1,6 +1,5 @@
 #pragma once
 #include <juce_audio_processors/juce_audio_processors.h>
-<<<<<<< HEAD
 #include "../core/Furchild.h"
 #include <atomic>
 
@@ -31,21 +30,6 @@ namespace setting
     inline constexpr const char* scale = "scale";     // window scale, 1.0 = 100 %
     inline constexpr const char* preset = "preset";   // name of the loaded preset
     inline constexpr const char* meter = "meter";     // needle shows 0 gain reduction, 1 output level
-=======
-#include "../core/FurchildCore.h"
-#include "ParamTable.h"
-#include <atomic>
-#include <cstring>
-
-// Parameter ids are the ones of the approved mockup (inA, thA, tcA, mode, link, out, mix, hp, bypass, levelMatch). Never rename them.
-namespace setting
-{
-    inline constexpr const char* look = "look";       // 0 = A, 1 = B, 2 = C
-    inline constexpr const char* tips = "tips";       // info bubbles
-    inline constexpr const char* power = "power";     // power saving redraw
-    inline constexpr const char* meter = "meter";     // needle shows 0 gain reduction, 1 level
-    inline constexpr const char* preset = "preset";   // name of the loaded preset
->>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
 }
 
 class FurchildProcessor : public juce::AudioProcessor
@@ -78,7 +62,6 @@ public:
     void setStateInformation (const void*, int) override;
 
     juce::AudioProcessorValueTreeState apvts;
-<<<<<<< HEAD
 
     // Meter data for the editor (written on the audio thread, read by the editor timer).
     // Peaks are linear and collected since the editor last read them (exchange to 0).
@@ -101,20 +84,6 @@ private:
     std::atomic<float>* pIn[2]; std::atomic<float>* pTh[2]; std::atomic<float>* pTc[2];
     std::atomic<float>* pMode; std::atomic<float>* pLink; std::atomic<float>* pOut; std::atomic<float>* pMix;
     std::atomic<float>* pHp; std::atomic<float>* pLevel; std::atomic<float>* pBypass;
-=======
-    fc::Engine engine;      // the editor reads its meters (plain floats, benign races)
-
-    juce::var getSetting (const char* key, const juce::var& fallback) const;
-    void setSetting (const char* key, const juce::var& v);
-
-private:
-    static juce::AudioProcessorValueTreeState::ParameterLayout createLayout();
-    std::array<std::atomic<float>*, fcp::kNumParams> raw {};
-    float vals[fcp::kNumParams] {}, lastVals[fcp::kNumParams] {};
-    bool haveLast = false;
-    bool lastLM = false;
-    void apply();
->>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (FurchildProcessor)
 };

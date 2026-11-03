@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Renders the real editor offscreen to a PNG (screenshots, manual tour) and runs plugin self tests that need the JUCE classes.
 // usage: FurSnapshot out.png [scale] [look A|B|C] [dialog none|settings|guide|about|presets|save|export|import|hp|tip] [frames] [preset name] [meter 0|1]
 //        FurSnapshot --selftest [fixture.xml]
@@ -107,17 +106,10 @@ static int selfTest (const juce::File& fixture)
     std::printf (bad == 0 ? "ALL SELF TESTS PASSED\n" : "SELF TESTS FAILED\n");
     return bad;
 }
-=======
-// Renders the real editor offscreen to a PNG so it can be compared with the mockup.
-// usage: FurchildSnapshot out.png [unused] [scale] [look 0|1|2] [frames]
-#include "../src/plugin/PluginProcessor.h"
-#include "../src/editor/PluginEditor.h"
->>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
 
 int main (int argc, char** argv)
 {
     juce::ScopedJuceInitialiser_GUI gui;
-<<<<<<< HEAD
     if (argc > 2 && juce::String (argv[1]) == "--write-fixture")
     {
         FurchildProcessor p; setFixtureValues (p);
@@ -149,50 +141,22 @@ int main (int argc, char** argv)
     // Feed a drum, bass and pad loop in real time so the meters, curve dot, tubes and history show something.
     juce::AudioBuffer<float> buf (2, 800);
     juce::MidiBuffer midi;
-=======
-    if (argc < 2) return 1;
-    FurchildProcessor proc;
-    proc.setPlayConfigDetails (2, 2, 48000.0, 512);
-    proc.prepareToPlay (48000.0, 512);
-    if (argc > 4) proc.setSetting (setting::look, juce::String (argv[4]).getIntValue());
-    auto setp = [&] (const char* id, float v) { if (auto* pr = proc.apvts.getParameter (id)) pr->setValueNotifyingHost (pr->convertTo0to1 (v)); };
-    setp ("out", 2.0f);
-    std::unique_ptr<juce::AudioProcessorEditor> ed (proc.createEditor());
-    const double sc = argc > 3 ? juce::String (argv[3]).getDoubleValue() : 1.0;
-    ed->setSize (juce::roundToInt (1200 * sc), juce::roundToInt (574 * sc));
-    const int frames = argc > 5 ? juce::String (argv[5]).getIntValue() : 60;
-    juce::AudioBuffer<float> buf (2, 512);
-    juce::MidiBuffer midi;
-    proc.prepareToPlay (48000.0, 512);
->>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
     juce::Random rnd (7);
     long pos = 0;
     for (int f = 0; f < frames; ++f)
     {
-<<<<<<< HEAD
         for (int i = 0; i < 800; ++i, ++pos)
         {
             const double t = (double) pos / 48000.0, tk = std::fmod (t, 0.5), th = std::fmod (t + 0.25, 0.5);
             float v = (float) (0.9 * std::exp (-tk * 12.0) * std::sin (6.2831853 * (52.0 + 90.0 * std::exp (-tk * 40.0)) * tk));
             v += (float) (0.22 * std::exp (-th * 45.0) * (rnd.nextFloat() * 2.0f - 1.0f));
             v += 0.16f * (float) std::sin (6.2831853 * 110.0 * t) * (float) (0.6 + 0.4 * std::sin (6.2831853 * 0.25 * t));
-=======
-        for (int i = 0; i < 512; ++i, ++pos)
-        {
-            const double t = (double) pos / 48000.0, tk = std::fmod (t, 0.5), th = std::fmod (t + 0.25, 0.5);
-            float v = (float) (0.85 * std::exp (-tk * 14.0) * std::sin (6.2831853 * (52.0 + 90.0 * std::exp (-tk * 40.0)) * tk));
-            v += (float) (0.22 * std::exp (-th * 45.0) * (rnd.nextFloat() * 2.0f - 1.0f));
-            v += 0.12f * (float) std::sin (6.2831853 * 220.0 * t);
->>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
             buf.setSample (0, i, v); buf.setSample (1, i, v * 0.97f);
         }
         proc.processBlock (buf, midi);
         juce::MessageManager::getInstance()->runDispatchLoopUntil (16);
     }
-<<<<<<< HEAD
     if (dialog != "none") { if (auto* pe = dynamic_cast<FurchildEditor*> (ed.get())) pe->openDialogForTesting (dialog); }
-=======
->>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
     juce::MessageManager::getInstance()->runDispatchLoopUntil (150);
     juce::Image img = ed->createComponentSnapshot (ed->getLocalBounds(), false, 1.0f);
     juce::File out (argv[1]);

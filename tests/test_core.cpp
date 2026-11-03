@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Furchild core tests. Build and run with: sh tests/run.sh
 // Everything below is measured on the compiled core (no JUCE). Hardware comparisons are not possible here, so the
 // targets are the design values of the approved mockup (ratio law, time constants, ranges); see the manual.
@@ -343,56 +342,4 @@ int main()
     }
     std::printf (fails == 0 ? "ALL CORE TESTS PASSED\n" : "%d CORE TESTS FAILED\n", fails);
     return fails == 0 ? 0 : 1;
-=======
-#include "../src/core/FurchildCore.h"
-#include <cstdio>
-#include <vector>
-#include <cstdlib>
-using namespace fc;
-static int fails = 0;
-#define CHECK(c, m) do { if (! (c)) { std::printf ("FAIL: %s\n", m); ++fails; } } while (0)
-int main (int argc, char**)
-{
-    CHECK (std::fabs (grFn (-30)) < 1e-6f, "no reduction far below threshold");
-    CHECK (grFn (0) > 0.5f && grFn (0) < 4.0f, "soft knee at threshold");
-    CHECK (grFn (20) > grFn (10), "monotonic");
-    CHECK (grFn (60) <= 50.0f, "cap");
-    float prev = -1; bool mono = true; for (float o = -30; o < 60; o += 0.37f) { const float g = grFn (o); if (g + 1e-6f < prev) mono = false; prev = g; }
-    CHECK (mono, "grFn monotonic over range");
-    const int N = argc > 1 ? 4800 : 48000 * 3;
-    Engine e; e.prepare (48000);
-    P p; p.gIn[0] = p.gIn[1] = 12; p.T[0] = p.T[1] = thToDb (2); p.tc[0] = p.tc[1] = 1; e.setP (p);
-    std::vector<float> L (N), R (N);
-    for (int i = 0; i < N; ++i) { L[i] = R[i] = 0.5f * std::sin (6.2831853f * 100.0f * i / 48000.0f); }
-    e.process (L.data(), R.data(), N);
-    CHECK (e.grNow[0] > 1.0f, "reduces gain on a loud sine");
-    float mx = 0; for (int i = 0; i < N; ++i) mx = std::max (mx, std::fabs (L[i]));
-    CHECK (mx <= 1.05f && std::isfinite (mx), "output bounded");
-    // silence stays silent and releases
-    for (int i = 0; i < N; ++i) L[i] = R[i] = 0;
-    e.process (L.data(), R.data(), N);
-    float s = 0; for (int i = N / 2; i < N; ++i) s = std::max (s, std::fabs (L[i]));
-    CHECK (argc > 1 || s < 1e-3f, "silence in, silence out");
-    // bypass is bit exact (below soft clip)
-    P b; b.bypass = true; e.setP (b);
-    for (int i = 0; i < 1000; ++i) L[i] = R[i] = 0.3f * std::sin (0.05f * i);
-    std::vector<float> c0 (L.begin(), L.begin() + 1000);
-    e.process (L.data(), R.data(), 1000);
-    bool same = true; for (int i = 0; i < 1000; ++i) if (L[i] != c0[i]) same = false;
-    CHECK (same, "bypass exact");
-    // random garbage never gives NaN
-    srand (1); Engine g; g.prepare (44100); P q; q.mode = 1; q.link = false; q.levelMatch = true; q.hp = 2; q.mix = 0.5f; q.gIn[0] = 24; q.gIn[1] = 24; q.tc[0] = 5; q.tc[1] = 4; g.setP (q);
-    std::vector<float> A (4096), B (4096);
-    bool fin = true;
-    for (int r = 0; r < 30; ++r) { for (int i = 0; i < 4096; ++i) { A[i] = (rand() / (float) RAND_MAX - 0.5f) * 4; B[i] = (rand() / (float) RAND_MAX - 0.5f) * 4; } g.process (A.data(), B.data(), 4096); for (int i = 0; i < 4096; ++i) if (! std::isfinite (A[i]) || ! std::isfinite (B[i]) || std::fabs (A[i]) > 1.01f) fin = false; }
-    CHECK (fin, "finite and clipped under abuse");
-    // lat/vert: mono signal in -> side channel gets no reduction
-    Engine m; m.prepare (48000); P lv; lv.mode = 1; lv.link = false; lv.gIn[0] = 12; lv.T[0] = thToDb (2); lv.T[1] = thToDb (2); m.setP (lv);
-    std::vector<float> ML (9600), MR (9600); for (int i = 0; i < 9600; ++i) ML[i] = MR[i] = 0.5f * std::sin (0.1f * i);
-    m.process (ML.data(), MR.data(), 9600);
-    CHECK (m.grNow[0] > 1.0f && m.grNow[1] < 0.01f, "lat/vert reduces mid only for mono");
-    if (fails) { std::printf ("%d failures\n", fails); return 1; }
-    std::printf ("all core tests passed\n");
-    return 0;
->>>>>>> ffce006 (Furchild plugin: engine, native window, presets, manual, installers, workflows (work in progress, first build pending))
 }
