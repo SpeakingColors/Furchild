@@ -1,5 +1,7 @@
 # Furchild
 
+<p align="center"><a href="https://ko-fi.com/studio87"><img src="https://raw.githubusercontent.com/SpeakingColors/.github/main/assets/kofi-banner.svg" alt="Support Studio 87 on Ko-fi" width="440"></a></p>
+
 A free, open source, cat-themed take on a classic stereo variable-mu tube limiting amplifier (VST3 for Linux, Windows and macOS).
 
 <p align="center"><img src="docs/screenshot.png" width="900" alt="The Furchild plugin window"></p>
