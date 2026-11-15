@@ -1,0 +1,65 @@
+[
+  {
+    "before": "furchild-before-drums.mp3",
+    "after": "furchild-after-drums-kick-bus.mp3",
+    "preset": "Kick Bus",
+    "source": "Drum loop",
+    "description": "Drum loop through the real Furchild C++ core with the factory preset Kick Bus (Drum; kick). The After clip is level matched to the Before clip (-4.0 dB)."
+  },
+  {
+    "before": "furchild-before-bass.mp3",
+    "after": "furchild-after-bass-kick-bus.mp3",
+    "preset": "Kick Bus",
+    "source": "Bass line",
+    "description": "Bass line through the real Furchild C++ core with the factory preset Kick Bus (Drum; kick). The After clip is level matched to the Before clip (-3.5 dB)."
+  },
+  {
+    "before": "furchild-before-mix.mp3",
+    "after": "furchild-after-mix-kick-bus.mp3",
+    "preset": "Kick Bus",
+    "source": "Full mix loop",
+    "description": "Full mix loop through the real Furchild C++ core with the factory preset Kick Bus (Drum; kick). The After clip is level matched to the Before clip (-4.6 dB)."
+  },
+  {
+    "before": "furchild-before-drums.mp3",
+    "after": "furchild-after-drums-mix-bus-glue.mp3",
+    "preset": "Mix Bus Glue",
+    "source": "Drum loop",
+    "description": "Drum loop through the real Furchild C++ core with the factory preset Mix Bus Glue (Bus; glue, mix bus). The After clip is level matched to the Before clip (-2.3 dB)."
+  },
+  {
+    "before": "furchild-before-bass.mp3",
+    "after": "furchild-after-bass-mix-bus-glue.mp3",
+    "preset": "Mix Bus Glue",
+    "source": "Bass line",
+    "description": "Bass line through the real Furchild C++ core with the factory preset Mix Bus Glue (Bus; glue, mix bus). The After clip is level matched to the Before clip (-2.6 dB)."
+  },
+  {
+    "before": "furchild-before-mix.mp3",
+    "after": "furchild-after-mix-mix-bus-glue.mp3",
+    "preset": "Mix Bus Glue",
+    "source": "Full mix loop",
+    "description": "Full mix loop through the real Furchild C++ core with the factory preset Mix Bus Glue (Bus; glue, mix bus). The After clip is level matched to the Before clip (-2.3 dB)."
+  },
+  {
+    "before": "furchild-before-drums.mp3",
+    "after": "furchild-after-drums-parallel-fur.mp3",
+    "preset": "Parallel Fur",
+    "source": "Drum loop",
+    "description": "Drum loop through the real Furchild C++ core with the factory preset Parallel Fur (Bus; parallel, thick). The After clip is level matched to the Before clip (+0.8 dB)."
+  },
+  {
+    "before": "furchild-before-bass.mp3",
+    "after": "furchild-after-bass-parallel-fur.mp3",
+    "preset": "Parallel Fur",
+    "source": "Bass line",
+    "description": "Bass line through the real Furchild C++ core with the factory preset Parallel Fur (Bus; parallel, thick). The After clip is level matched to the Before clip (+0.5 dB)."
+  },
+  {
+    "before": "furchild-before-mix.mp3",
+    "after": "furchild-after-mix-parallel-fur.mp3",
+    "preset": "Parallel Fur",
+    "source": "Full mix loop",
+    "description": "Full mix loop through the real Furchild C++ core with the factory preset Parallel Fur (Bus; parallel, thick). The After clip is level matched to the Before clip (+0.8 dB)."
+  }
+]
