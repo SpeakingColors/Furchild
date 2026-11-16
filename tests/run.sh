@@ -6,3 +6,6 @@ FLAGS="-std=c++17 -O2 -Wall -Wextra"
 [ -n "$SAN" ] && FLAGS="$FLAGS -fsanitize=address,undefined -fno-omit-frame-pointer"
 g++ $FLAGS -o /tmp/furchild_test tests/test_core.cpp
 /tmp/furchild_test
+# Studio 87 Gear Updater link (product id and link string)
+g++ -std=c++17 -O2 -Wall -Wextra -o /tmp/furchild_link_test tests/test_updater_link.cpp
+/tmp/furchild_link_test
