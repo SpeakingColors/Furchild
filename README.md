@@ -22,9 +22,6 @@ Two channels with Input, Threshold and Time (six time constants, two automatic),
 ## The design mockup
 The original interactive mockup is kept in `docs/mockup/Furchild.html` (WebAudio preview; it works offline).
 
-## Privacy
-Collects nothing. No network access, no telemetry, no accounts.
-
 ## Support
 <p align="center">
   <a href="https://ko-fi.com/studio87"><img src="https://img.shields.io/badge/Support_Studio_87-on_Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Support Studio 87 on Ko-fi"></a>
