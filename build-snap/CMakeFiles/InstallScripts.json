@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/runner/work/Furchild/Furchild/build-snap/cmake_install.cmake",
+		"/home/runner/work/Furchild/Furchild/build-snap/_deps/juce-build/cmake_install.cmake",
+		"/home/runner/work/Furchild/Furchild/build-snap/_deps/juce-build/modules/cmake_install.cmake",
+		"/home/runner/work/Furchild/Furchild/build-snap/_deps/juce-build/extras/Build/cmake_install.cmake",
+		"/home/runner/work/Furchild/Furchild/build-snap/_deps/juce-build/extras/Build/juceaide/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

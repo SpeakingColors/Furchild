@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFurAssets.a CMakeFiles/FurAssets.dir/juce_binarydata_FurAssets/JuceLibraryCode/BinaryData1.cpp.o CMakeFiles/FurAssets.dir/juce_binarydata_FurAssets/JuceLibraryCode/BinaryData2.cpp.o CMakeFiles/FurAssets.dir/juce_binarydata_FurAssets/JuceLibraryCode/BinaryData3.cpp.o CMakeFiles/FurAssets.dir/juce_binarydata_FurAssets/JuceLibraryCode/BinaryData4.cpp.o CMakeFiles/FurAssets.dir/juce_binarydata_FurAssets/JuceLibraryCode/BinaryData5.cpp.o CMakeFiles/FurAssets.dir/juce_binarydata_FurAssets/JuceLibraryCode/BinaryData6.cpp.o
+/usr/bin/ranlib libFurAssets.a
